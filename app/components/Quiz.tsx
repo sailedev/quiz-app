@@ -52,8 +52,8 @@ const Quiz = ({ questions, onRetry }: Props) => {
 								</h3>
 								<ul className='space-y-2'>
 									{q.choices.map((choice) => {
-										const isUserChoice = userAnswer === choice;
-										const isCorrectAnswer = q.answer === choice;
+										const isUserChoice = String(userAnswer) === String(choice);
+										const isCorrectAnswer = q.answer === Number(choice);
 
 										let bg = 'bg-white';
 										let border = 'border-gray-300';
@@ -92,7 +92,6 @@ const Quiz = ({ questions, onRetry }: Props) => {
 						);
 					})}
 				</div>
-				{/* 🔁 PRØV IGJEN */}
 				<div className='text-center'>
 					<button
 						onClick={onRetry}

@@ -18,6 +18,7 @@ const Quiz = ({ questions, onRetry }: Props) => {
 		const newAnswers = [...answers];
 		newAnswers[current] = choiceIndex;
 		setAnswers(newAnswers);
+		next();
 	};
 
 	const next = () => {
@@ -115,13 +116,6 @@ const Quiz = ({ questions, onRetry }: Props) => {
 				selected={answers[current]}
 				onSelect={handleSelect}
 			/>
-			<button
-				onClick={next}
-				disabled={answers[current] == null}
-				className='mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50'
-			>
-				{current < questions.length - 1 ? 'Neste' : 'Fullfør'}
-			</button>
 		</div>
 	);
 };

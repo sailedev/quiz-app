@@ -1,0 +1,597 @@
+[
+	{
+		"question": "Hva er navnet på datablokken i applikasjonslaget i internettmodellen?",
+		"choices": ["Segment", "Ramme", "Melding", "Datagram"],
+		"answer": 2
+	},
+	{
+		"question": "Hvilken protokoll er typisk innkapslet i en linklagsramme i et Ethernet-nettverk?",
+		"choices": ["SMTP", "IPv4", "HTTP", "SSL"],
+		"answer": 1
+	},
+	{
+		"question": "Hva kalles TCP-vinduet som forhindrer overbelastning i nettverket?",
+		"choices": [
+			"Mottakervindu",
+			"Glidende vindu",
+			"Brukergrensesnitt-vindu",
+			"Metningsvindu"
+		],
+		"answer": 3
+	},
+	{
+		"question": "Hvilken applikasjonslagsprotokoll brukes for å laste ned nettsider?",
+		"choices": ["UDP", "HTTP", "IP", "ARP"],
+		"answer": 1
+	},
+	{
+		"question": "Hvem sender vanligvis pakke 330 i en TCP-forbindelse?",
+		"choices": ["Ingen", "Klienten", "Serveren", "Begge"],
+		"answer": 1
+	},
+	{
+		"question": "Hva beskriver best en persistent HTTP-tilkobling?",
+		"choices": [
+			"Tilkoblingen avsluttes etter én forespørsel",
+			"Tilkoblingen holdes åpen for flere forespørsler",
+			"Tilkoblingen benyttes av UDP",
+			"Tilkoblingen brukes til multicast"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva er en cookie i nettverkssammenheng?",
+		"choices": [
+			"En fil som lagrer server autentiseringsdata",
+			"En liten tekstfil sendt fra nettstedet og lagret på klienten",
+			"En liste over nylige nettadresser",
+			"En midlertidig IP-adresse"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hvilket binært IPv4-adresse tilsvarer 105.16.80.171?",
+		"choices": [
+			"01101001.00010000.01010000.10101011",
+			"01001001.10001000.00010100.11101011",
+			"01101000.00010000.11010000.10101010",
+			"10101010.11001000.01110000.01010101"
+		],
+		"answer": 0
+	},
+	{
+		"question": "Hvilken port bruker DNS-forespørsler vanligvis over UDP?",
+		"choices": ["25", "53", "80", "110"],
+		"answer": 1
+	},
+	{
+		"question": "Hvilken av disse protokollene er mest brukt for fildistribusjon i P2P-nettverk?",
+		"choices": ["BitTorrent", "BitXfer", "BitCoin", "BitBucket"],
+		"answer": 0
+	},
+	{
+		"question": "Hva gjør DHCP?",
+		"choices": [
+			"Gir enheter MAC-adresser",
+			"Tildeler IP-adresser automatisk",
+			"Brukes til å kryptere trafikk",
+			"Er en transportlagsprotokoll"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva er korrekt om UDP?",
+		"choices": [
+			"UDP sikrer rekkefølge",
+			"UDP har ingen flytkontroll",
+			"UDP gir garantert levering",
+			"UDP segmenter blir retransmittert automatisk"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva er en hovedfunksjon til TCP?",
+		"choices": [
+			"Lavere overføringshastighet",
+			"Pålitelig dataoverføring",
+			"Lavere båndbredde",
+			"Mindre overhead enn UDP"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva kalles det når TCP øker vinduet lineært etter slow start?",
+		"choices": [
+			"Fast recovery",
+			"Congestion avoidance",
+			"Timeout recovery",
+			"Window scaling"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva brukes vanligvis til å oversette domenenavn til IP-adresser?",
+		"choices": ["ARP", "DNS", "NAT", "DHCP"],
+		"answer": 1
+	},
+	{
+		"question": "Hvilken av følgende er en applikasjonslagsprotokoll?",
+		"choices": ["ICMP", "SMTP", "IPv4", "ARP"],
+		"answer": 1
+	},
+	{
+		"question": "Hva gjør NAT?",
+		"choices": [
+			"Bytter ut IP-adresser for trafikk mellom LAN og Internett",
+			"Brukes til feildeteksjon",
+			"Krypterer datatrafikk",
+			"Ruter trafikk mellom forskjellige VLAN"
+		],
+		"answer": 0
+	},
+	{
+		"question": "Hvilken standard brukes for Ethernet?",
+		"choices": ["IEEE 802.3", "IEEE 802.11", "IEEE 802.15", "IEEE 802.5"],
+		"answer": 0
+	},
+	{
+		"question": "Hva gjør en ARP-protokoll?",
+		"choices": [
+			"Oversetter MAC til IP",
+			"Oversetter IP til MAC",
+			"Overfører filer",
+			"Oppretter TCP-forbindelser"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva brukes transportlaget i internettmodellen til?",
+		"choices": [
+			"Ruting av pakker",
+			"Sikre ende-til-ende forbindelse",
+			"Kryptering",
+			"Fysisk signaloverføring"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva er typisk MTU (Maximum Transmission Unit) i Ethernet?",
+		"choices": ["512 bytes", "1500 bytes", "2048 bytes", "64 bytes"],
+		"answer": 1
+	},
+	{
+		"question": "Hvilken algoritme benytter OSPF for å finne korteste vei i et nettverk?",
+		"choices": ["Bellman-Ford", "Flooding", "Dijkstra", "Spanning Tree"],
+		"answer": 2
+	},
+	{
+		"question": "Hva er hovedformålet med BGP-protokollen?",
+		"choices": [
+			"Routing innenfor et AS",
+			"Routing mellom autonome systemer",
+			"Routing for multicast",
+			"Routing i lokale nettverk"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hvilken tjeneste ytes av Transport Layer Security (TLS)?",
+		"choices": [
+			"Tidsstyrt levering",
+			"Kryptert forbindelsesoppbygging",
+			"Applikasjonsprotokollkontroll",
+			"Båndbreddebegrensning"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva er typisk funksjon for en CTS-ramme i IEEE 802.11?",
+		"choices": [
+			"Tillater sending etter RTS",
+			"Indikerer nettverksfeil",
+			"Krypterer overføring",
+			"Oppdaterer beacon-tabeller"
+		],
+		"answer": 0
+	},
+	{
+		"question": "Hvordan blir IP-adresser vanligvis tildelt i et hjemmenettverk?",
+		"choices": ["Manuelt", "Med DNS", "Med DHCP", "Gjennom NAT"],
+		"answer": 2
+	},
+	{
+		"question": "Hva kalles protokollen som oversetter domenenavn til IP-adresser?",
+		"choices": ["DNS", "NAT", "ARP", "TCP"],
+		"answer": 0
+	},
+	{
+		"question": "Hva indikerer et Wireshark-pakkefelt med 'Win=151168'?",
+		"choices": [
+			"Portnummer",
+			"Krypteringsnøkkel",
+			"TCP-vindusstørrelse",
+			"MTU-verdi"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hvilket lag i nettverksmodellen implementerer ARP?",
+		"choices": [
+			"Applikasjonslaget",
+			"Transportlaget",
+			"Nettverkslaget",
+			"Linklaget"
+		],
+		"answer": 3
+	},
+	{
+		"question": "Hva brukes SHA-algoritmen vanligvis til i SSL?",
+		"choices": [
+			"Symmetrisk kryptering",
+			"Feilkorrigering",
+			"Signaturverifikasjon",
+			"Hashing for integritet"
+		],
+		"answer": 3
+	},
+	{
+		"question": "Hvilken port benyttes vanligvis av HTTPS?",
+		"choices": ["21", "22", "443", "8080"],
+		"answer": 2
+	},
+	{
+		"question": "Hva er typisk båndbredde for IEEE 802.11n?",
+		"choices": ["54 Mbps", "100 Mbps", "300 Mbps", "10 Mbps"],
+		"answer": 2
+	},
+	{
+		"question": "Hva er hensikten med RTT i en TCP-forbindelse?",
+		"choices": [
+			"Å måle båndbredde",
+			"Å estimere forsinkelse",
+			"Å kalkulere segmentstørrelse",
+			"Å allokere porter"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva kalles standarden for lokal Ethernet LAN?",
+		"choices": ["802.11", "802.3", "802.5", "802.15"],
+		"answer": 1
+	},
+	{
+		"question": "Hva beskriver best SMTP?",
+		"choices": [
+			"Nedlastingsprotokoll",
+			"Push-protokoll for e-post",
+			"Krypteringsprotokoll",
+			"DNS-relatert tjeneste"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva betyr det når TCP vindusstørrelse er 0?",
+		"choices": [
+			"Sender skal stoppe sending",
+			"Segmentet er mistet",
+			"Forbindelsen er kryptert",
+			"En ny rute må opprettes"
+		],
+		"answer": 0
+	},
+	{
+		"question": "Hva er hovedmålet med NAT?",
+		"choices": [
+			"Kryptere pakker",
+			"Skjule interne IP-adresser",
+			"Reservere båndbredde",
+			"Prioritere trafikk"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva er en digital signatur?",
+		"choices": [
+			"En kryptert hash av en melding",
+			"En offentlig nøkkel",
+			"En sertifikatfil",
+			"En bekreftelse fra ISP"
+		],
+		"answer": 0
+	},
+	{
+		"question": "Hvilken av disse er en mail access protocol?",
+		"choices": ["SMTP", "TLS", "IMAP", "HTTPS"],
+		"answer": 2
+	},
+	{
+		"question": "Hva gjør Diffie-Hellman-algoritmen?",
+		"choices": [
+			"Signerer meldinger",
+			"Overfører filer",
+			"Bytter nøkler sikkert",
+			"Krypterer med symmetrisk nøkkel"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hvilket binært tall representerer IP-adressen 192.168.1.1?",
+		"choices": [
+			"11000000.10101000.00000001.00000001",
+			"10000000.11000000.10101000.00000000",
+			"11000000.00000001.10101000.00000001",
+			"00000001.11000000.10101000.00000001"
+		],
+		"answer": 0
+	},
+	{
+		"question": "Hva står 'Congestion Window' i TCP for?",
+		"choices": [
+			"Antall pakker i køen",
+			"Ruterens tilgjengelige buffer",
+			"Mengden data som kan sendes før ACK",
+			"Maksimal segmentstørrelse"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva brukes portnummer til i transportlaget?",
+		"choices": [
+			"For å identifisere IP-adresser",
+			"For å angi nettverksbåndbredde",
+			"For å identifisere applikasjonsprosesser",
+			"For å måle latency"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva er en viktig egenskap ved Go-Back-N protokollen?",
+		"choices": [
+			"Mottakeren sender individuelle ACKs",
+			"Senderen kan ha én utestående pakke",
+			"Senderen sender alle utestående pakker ved timeout",
+			"Protokollen støtter multicast"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva er formålet med congestion control i TCP?",
+		"choices": [
+			"Å redusere pakkestørrelsen",
+			"Å hindre overbelastning i nettverket",
+			"Å maksimere antall ACKs",
+			"Å prioritere e-posttrafikk"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva gjør 'three-way handshake' i TCP?",
+		"choices": [
+			"Avslutter forbindelser",
+			"Inkluderer kun én side",
+			"Setter opp en sikker kanal",
+			"Etablerer forbindelse mellom klient og server"
+		],
+		"answer": 3
+	},
+	{
+		"question": "Hva brukes DNS til i applikasjonslaget?",
+		"choices": [
+			"Til å logge brukeraktivitet",
+			"Til å tildele IP-adresser",
+			"Til å kryptere meldinger",
+			"Til å oversette domenenavn til IP-adresser"
+		],
+		"answer": 3
+	},
+	{
+		"question": "Hva er en cookie i HTTP?",
+		"choices": [
+			"Et IP-adresseoppslag",
+			"En mellomlagret DNS-respons",
+			"Lokal informasjon lagret av nettleseren",
+			"En type HTTP-kryptering"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hvilket protokollpar brukes typisk til e-posttjenester?",
+		"choices": ["HTTP og FTP", "SMTP og IMAP", "DNS og UDP", "TCP og QUIC"],
+		"answer": 1
+	},
+	{
+		"question": "Hva er en av hovedutfordringene i trådløse nettverk?",
+		"choices": [
+			"Kryptering",
+			"Kollisjoner og interferens",
+			"Mangel på rutere",
+			"For lange kabler"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva er formålet med CSMA/CA i WiFi?",
+		"choices": [
+			"Å håndtere adressering",
+			"Å sikre datapakker",
+			"Å unngå kollisjoner før sending",
+			"Å oppdatere DNS-cache"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva kjennetegner en ad-hoc trådløs nettverksstruktur?",
+		"choices": [
+			"Bruk av dedikerte aksesspunkter",
+			"Direkte kommunikasjon mellom noder",
+			"Høyere båndbredde enn WiFi",
+			"Sentralisert DNS-tjeneste"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva er hensikten med NAT (Network Address Translation)?",
+		"choices": [
+			"Å redusere overføringshastighet",
+			"Å maskere interne IP-adresser",
+			"Å fordele portnumre automatisk",
+			"Å validere DNS-respons"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva er det primære målet med en brannmur i nettverkssikkerhet?",
+		"choices": [
+			"Å filtrere og kontrollere innkommende og utgående trafikk",
+			"Å tilby kryptering av alle data",
+			"Å optimalisere båndbreddebruk",
+			"Å fungere som DNS-server"
+		],
+		"answer": 0
+	},
+	{
+		"question": "Hva er forskjellen mellom symmetrisk og asymmetrisk kryptering?",
+		"choices": [
+			"Symmetrisk bruker to forskjellige nøkler",
+			"Asymmetrisk bruker samme nøkkel til kryptering og dekryptering",
+			"Symmetrisk bruker én delt nøkkel, asymmetrisk bruker offentlig og privat nøkkel",
+			"Det finnes ingen forskjell"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva står SNR for i trådløse nettverk?",
+		"choices": [
+			"Server Node Rate",
+			"Signal-to-Noise Ratio",
+			"Shared Network Response",
+			"Synchronous Network Reliability"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva er en hash-funksjon brukt til i nettverkssikkerhet?",
+		"choices": [
+			"For å allokere IP-adresser",
+			"For å kryptere meldinger",
+			"For å autentisere meldinger ved å skape en digital signatur",
+			"For å bestemme rutingtabeller"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva er hovedoppgaven til en ruter i nettverkslaget?",
+		"choices": [
+			"Å kryptere datapakker",
+			"Å oversette portnumre",
+			"Å videresende pakker mellom nettverk",
+			"Å gi tilgang til fysiske medier"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva betyr 'longest prefix match' i ruting?",
+		"choices": [
+			"Det korteste subnettet velges",
+			"Ruten med høyest prioritet brukes alltid",
+			"Den ruten med mest spesifikke match på IP-adresse brukes",
+			"Den første matchen i tabellen brukes"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva er hovedoppgaven til transportlaget i nettverksmodellen?",
+		"choices": [
+			"Å sørge for fysisk signaloverføring",
+			"Å gi logisk kommunikasjon mellom applikasjonsprosesser",
+			"Å fordele IP-adresser",
+			"Å oversette domenenavn"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva skiller UDP fra TCP i transportlaget?",
+		"choices": [
+			"UDP tilbyr pålitelig overføring",
+			"TCP mangler portnummer",
+			"UDP er tilkoblingsfri og tilbyr ingen bekreftelser",
+			"TCP er ikke egnet for videooverføring"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva brukes portnummer til i transportlaget?",
+		"choices": [
+			"For å identifisere IP-adresser",
+			"For å spesifisere protokolltypen",
+			"For å identifisere spesifikke applikasjonsprosesser",
+			"For å angi hvilken ruter som skal brukes"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva er forskjellen mellom en klient og en server i klient-tjener-modellen?",
+		"choices": [
+			"Klienter sender alltid data, servere bare mottar",
+			"Serveren er alltid tilgjengelig og har en fast IP",
+			"Klienter har alltid statisk IP-adresse",
+			"Servere bruker kun UDP"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hva står HTTP for?",
+		"choices": [
+			"HyperText Transfer Protocol",
+			"Hyperlink Transmission Transport Protocol",
+			"Host Transfer and Transport Protocol",
+			"Hybrid Text Transfer Port"
+		],
+		"answer": 0
+	},
+	{
+		"question": "Hva brukes en digital signatur til?",
+		"choices": [
+			"Å komprimere data",
+			"Å bekrefte meldingens opphav og integritet",
+			"Å formatere e-post",
+			"Å generere tilfeldig nøkkel"
+		],
+		"answer": 1
+	},
+	{
+		"question": "Hvilken protokoll benyttes vanligvis for å sende e-post?",
+		"choices": ["IMAP", "HTTP", "SMTP", "FTP"],
+		"answer": 2
+	},
+	{
+		"question": "Hva er hovedforskjellen på P2P og klient-tjener-modellen?",
+		"choices": [
+			"P2P har sentralisert kontroll",
+			"Klient-tjener er desentralisert",
+			"P2P gir bedre sikkerhet",
+			"I P2P fungerer alle noder som både klient og server"
+		],
+		"answer": 3
+	},
+	{
+		"question": "Hva gjør et hash-funksjon i kryptografi?",
+		"choices": [
+			"Sender data over kryptert kanal",
+			"Signer meldinger med privat nøkkel",
+			"Genererer en unik digital fingeravtrykk",
+			"Distribuerer nøkler til alle brukere"
+		],
+		"answer": 2
+	},
+	{
+		"question": "Hva beskriver best 'multipath propagation' i trådløse nettverk?",
+		"choices": [
+			"Pakker rutes gjennom flere rutere",
+			"Flere brukere sender på samme kanal",
+			"Signaler når mottaker via forskjellige refleksjoner",
+			"Bruk av flere samtidige IP-adresser"
+		],
+		"answer": 2
+	}
+]

@@ -24,7 +24,9 @@ export default function Home() {
 		const reader = new FileReader();
 		reader.onload = (event) => {
 			try {
-				const json = JSON.parse(event.target?.result as string);
+				const json = JSON.parse(
+					event.target?.result as string
+				) as QuestionType[];
 				const selected = pluckRandomSubset(json, 20);
 				setQuestions(selected);
 			} catch (error) {
@@ -39,10 +41,10 @@ export default function Home() {
 		try {
 			const res = await fetch('/example.json');
 			const data = await res.json();
-			const selected = pluckRandomSubset(data, 20);
+			const selected = pluckRandomSubset(data as QuestionType[], 20);
 			setQuestions(selected);
 		} catch (err) {
-			alert('Kunne ikke laste eksempelquiz');
+			alert('Kunne ikke laste eksempelquiz' + err);
 		}
 	};
 

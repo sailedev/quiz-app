@@ -9,14 +9,15 @@ type Props = {
 
 const Quiz = ({ questions, onRetry }: Props) => {
 	const [current, setCurrent] = useState(0);
-	const [answers, setAnswers] = useState<(string | null)[]>(
+	const [answers, setAnswers] = useState<(number | null)[]>(
 		new Array(questions.length).fill(null)
 	);
+
 	const [finished, setFinished] = useState(false);
 
 	const handleSelect = (choice: string) => {
 		const newAnswers = [...answers];
-		newAnswers[current] = choice;
+		newAnswers[current] = Number(choice);
 		setAnswers(newAnswers);
 	};
 

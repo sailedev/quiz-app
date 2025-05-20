@@ -15,6 +15,7 @@ function pluckRandomSubset<T>(array: T[], count: number): T[] {
 
 export default function Home() {
 	const [questions, setQuestions] = useState<QuestionType[] | null>(null);
+	const [numberOfQuestions, setNumberQuestions] = useState(0);
 
 	// ✅ Last opp egen fil
 	const handleFile = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -37,9 +38,9 @@ export default function Home() {
 	};
 
 	// ✅ Bruk eksempelquiz fra public/example.json
-	const loadExample = async () => {
+	const loadDatakomm = async () => {
 		try {
-			const res = await fetch('/example.json');
+			const res = await fetch('/datakomm.json');
 			const data = await res.json();
 			const selected = pluckRandomSubset(data as QuestionType[], 20);
 			setQuestions(selected);
@@ -54,25 +55,26 @@ export default function Home() {
 	return (
 		<main className='min-h-screen bg-gray-950 text-white p-8 flex flex-col items-center'>
 			<div className='max-w-3xl w-full'>
-				<h1 className='text-3xl font-bold mb-6 text-center'>
-					Last opp Quiz-fil
-				</h1>
-
 				{!questions ? (
-					<div className='space-y-4 text-center'>
-						<input
-							type='file'
-							accept='.json'
-							onChange={handleFile}
-							className='file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:bg-blue-600 file:text-white hover:file:bg-blue-700'
-						/>
-						<p className='text-sm text-gray-400'>eller</p>
-						<button
-							onClick={loadExample}
-							className='px-4 py-2 bg-blue-600 rounded hover:bg-blue-700'
-						>
-							Bruk eksempelquiz
-						</button>
+					<div>
+						<h1 className='text-3xl font-bold mb-6 text-center'>
+							Last opp Quiz-fil
+						</h1>
+						<div className='space-y-4 text-center'>
+							<input
+								type='file'
+								accept='.json'
+								onChange={handleFile}
+								className='file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:bg-blue-600 file:text-white hover:file:bg-blue-700'
+							/>
+							<p className='text-sm text-gray-400'>eller</p>
+							<button
+								onClick={loadDatakomm}
+								className='px-4 py-2 bg-blue-600 rounded hover:bg-blue-700'
+							>
+								Datakomm json fil (/datakomm.json)
+							</button>
+						</div>
 					</div>
 				) : (
 					<Quiz questions={questions} onRetry={resetQuiz} />

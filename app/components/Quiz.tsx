@@ -12,12 +12,11 @@ const Quiz = ({ questions, onRetry }: Props) => {
 	const [answers, setAnswers] = useState<(number | null)[]>(
 		new Array(questions.length).fill(null)
 	);
-
 	const [finished, setFinished] = useState(false);
 
-	const handleSelect = (choice: string) => {
+	const handleSelect = (choiceIndex: number) => {
 		const newAnswers = [...answers];
-		newAnswers[current] = Number(choice);
+		newAnswers[current] = choiceIndex;
 		setAnswers(newAnswers);
 	};
 
@@ -40,20 +39,21 @@ const Quiz = ({ questions, onRetry }: Props) => {
 					{questions.length} riktige.
 				</p>
 
-				<div className='space-y-8'>
+				<div className='space-y-8 mb-8'>
 					{questions.map((q, i) => {
 						const userAnswer = answers[i];
 						const isCorrect = userAnswer === q.answer;
 
 						return (
-							<div key={i} className='p-6 border rounded-lg shadow-sm bg-white'>
-								<h3 className='font-semibold mb-4 text-lg text-black'>
-									{q.question}
-								</h3>
+							<div
+								key={i}
+								className='p-6 border rounded-lg shadow-sm bg-white text-black'
+							>
+								<h3 className='font-semibold mb-4 text-lg'>{q.question}</h3>
 								<ul className='space-y-2'>
-									{q.choices.map((choice) => {
-										const isUserChoice = String(userAnswer) === String(choice);
-										const isCorrectAnswer = q.answer === Number(choice);
+									{q.choices.map((choice, idx) => {
+										const isUserChoice = userAnswer === idx;
+										const isCorrectAnswer = q.answer === idx;
 
 										let bg = 'bg-white';
 										let border = 'border-gray-300';
@@ -79,7 +79,7 @@ const Quiz = ({ questions, onRetry }: Props) => {
 
 										return (
 											<li
-												key={choice}
+												key={idx}
 												className={`p-3 rounded border ${bg} ${border} ${text}`}
 											>
 												{choice}
@@ -92,6 +92,7 @@ const Quiz = ({ questions, onRetry }: Props) => {
 						);
 					})}
 				</div>
+
 				<div className='text-center'>
 					<button
 						onClick={onRetry}
@@ -106,7 +107,7 @@ const Quiz = ({ questions, onRetry }: Props) => {
 
 	return (
 		<div className='p-4 max-w-xl mx-auto'>
-			<div className='mb-4 text-sm text-gray-600'>
+			<div className='mb-4 text-sm text-gray-300'>
 				Spørsmål {current + 1} av {questions.length}
 			</div>
 			<Question

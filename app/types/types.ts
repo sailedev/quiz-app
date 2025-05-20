@@ -1,5 +1,5 @@
 export type QuestionType = {
 	question: string;
 	choices: string[];
-	answer: number;
+	answer: number; // indeks i choices
 };

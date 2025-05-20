@@ -1951,5 +1951,554 @@
       "They forward the query to root servers"
     ],
     "answer": 1
-  }
+  },
+	{
+"question": "Which protocol is commonly used for real-time streaming of audio and video over IP networks?",
+"choices": [
+"SMTP",
+"RTP",
+"FTP",
+"ICMP"
+],
+"answer": 1
+},
+{
+"question": "What is the main purpose of SIP (Session Initiation Protocol)?",
+"choices": [
+"Encrypt web traffic",
+"Download files from servers",
+"Establish, modify, and terminate multimedia sessions",
+"Monitor network latency"
+],
+"answer": 2
+},
+{
+"question": "Which protocol is used to negotiate encryption parameters in VPNs and secure IP communications?",
+"choices": [
+"RTP",
+"IKE",
+"DHCP",
+"SMTP"
+],
+"answer": 1
+},
+{
+"question": "What feature does TLS (Transport Layer Security) provide?",
+"choices": [
+"IP address resolution",
+"Congestion control",
+"Data encryption and integrity",
+"MAC address filtering"
+],
+"answer": 2
+},
+{
+"question": "Which field in a digital certificate is used to verify its authenticity?",
+"choices": [
+"MAC address",
+"Public key",
+"Digital signature",
+"Port number"
+],
+"answer": 2
+},
+{
+"question": "What is a key advantage of using asymmetric encryption in secure communications?",
+"choices": [
+"Faster than symmetric encryption",
+"Requires a shared secret key",
+"Enables key exchange without sharing a secret key",
+"Used only in local area networks"
+],
+"answer": 2
+},
+{
+"question": "Which component of a firewall determines whether traffic is allowed or blocked?",
+"choices": [
+"IP header",
+"Rule set or access control list (ACL)",
+"Checksum",
+"MAC address table"
+],
+"answer": 1
+},
+{
+"question": "What does QoS traffic shaping aim to control?",
+"choices": [
+"MAC address conflicts",
+"Outbound traffic rate to match network capacity",
+"Public IP address allocation",
+"Packet header size"
+],
+"answer": 1
+},
+{
+"question": "Which technique is used in DiffServ to differentiate network traffic?",
+"choices": [
+"VLAN tagging",
+"IP tunneling",
+"DSCP marking in IP header",
+"ARP broadcast"
+],
+"answer": 2
+},
+{
+"question": "What does the acronym DASH stand for in multimedia streaming?",
+"choices": [
+"Dynamic Audio Signal Handling",
+"Distributed Access over Secure HTTP",
+"Dynamic Adaptive Streaming over HTTP",
+"Data Aggregation for Secure Hosts"
+],
+"answer": 2
+},
+{
+"question": "In wireless networks, what is the function of a handoff procedure?",
+"choices": [
+"Assign IP addresses to devices",
+"Transfer a mobile device’s connection from one access point to another",
+"Encrypt Wi-Fi traffic",
+"Verify MAC addresses"
+],
+"answer": 1
+},
+{
+"question": "Which LTE component handles mobility management and session control?",
+"choices": [
+"eNodeB",
+"SGW (Serving Gateway)",
+"MME (Mobility Management Entity)",
+"DHCP Server"
+],
+"answer": 2
+},
+{
+"question": "What is the role of SDN (Software Defined Networking) controllers?",
+"choices": [
+"Forward packets based on IP addresses",
+"Physically transmit bits across links",
+"Programmatically manage and update forwarding rules on switches",
+"Encrypt application data"
+],
+"answer": 2
+},
+{
+"question": "Which plane in SDN is responsible for making routing decisions?",
+"choices": [
+"Data plane",
+"Control plane",
+"Application plane",
+"Transport plane"
+],
+"answer": 1
+},
+{
+"question": "What is the purpose of a VLAN?",
+"choices": [
+"Encrypt wireless traffic",
+"Segment a broadcast domain within a physical network",
+"Provide remote file access",
+"Reduce MAC address length"
+],
+"answer": 1
+},
+{
+"question": "How are VLANs identified in Ethernet frames?",
+"choices": [
+"Checksum field",
+"VLAN ID in the 802.1Q tag",
+"IP address range",
+"TCP port number"
+],
+"answer": 1
+},
+{
+"question": "What is a key feature of the BitTorrent protocol?",
+"choices": [
+"Centralized server distribution",
+"Sequential file delivery",
+"Swarm-based peer exchange of file pieces",
+"Uses TCP exclusively"
+],
+"answer": 2
+},
+{
+"question": "Which BitTorrent component helps peers locate other peers with file chunks?",
+"choices": [
+"Tracker",
+"Seeder",
+"Downloader",
+"Firewall"
+],
+"answer": 0
+},
+{
+"question": "Which factor primarily determines video buffering delay in streaming?",
+"choices": [
+"Bitrate of the video",
+"Size of the client's DNS cache",
+"Time-to-live of Ethernet frames",
+"TCP window size"
+],
+"answer": 0
+},
+{
+"question": "Which VPN protocol encapsulates IP packets for secure tunneling over untrusted networks?",
+"choices": [
+"PPP",
+"IPSec",
+"DHCP",
+"ARP"
+],
+"answer": 1
+},
+	{
+"question": "What is the purpose of the Flow Label field in an IPv6 header?",
+"choices": [
+"To uniquely identify a session for special handling",
+"To specify the packet’s priority",
+"To identify fragments of a larger datagram",
+"To store the destination IP address"
+],
+"answer": 0
+},
+{
+"question": "Which IPv6 address prefix is used for link-local communication?",
+"choices": [
+"2001::/16",
+"FE80::/10",
+"FF00::/8",
+"::1/128"
+],
+"answer": 1
+},
+{
+"question": "Which protocol enables IPv6 hosts to configure their own addresses automatically?",
+"choices": [
+"DHCPv6",
+"SLAAC",
+"NDP",
+"IGMPv6"
+],
+"answer": 1
+},
+{
+"question": "What is the primary role of SNMP in network management?",
+"choices": [
+"Encrypting router communication",
+"Resolving domain names",
+"Monitoring and managing network devices",
+"Routing packets between autonomous systems"
+],
+"answer": 2
+},
+{
+"question": "Which component in SNMP holds structured data about a managed device?",
+"choices": [
+"MIB (Management Information Base)",
+"OID (Object Identifier)",
+"ACL",
+"Syslog"
+],
+"answer": 0
+},
+{
+"question": "In SNMPv3, which feature was added to improve security?",
+"choices": [
+"Port filtering",
+"Encryption and authentication",
+"Broadcast messaging",
+"Token-based routing"
+],
+"answer": 1
+},
+{
+"question": "Which queueing model assumes Poisson arrivals and exponential service times?",
+"choices": [
+"M/M/1",
+"M/D/1",
+"G/G/1",
+"FIFO"
+],
+"answer": 0
+},
+{
+"question": "What does Little’s Law express in network performance modeling?",
+"choices": [
+"Relationship between delay and packet loss",
+"Throughput = Arrival rate × Average delay",
+"Queue size = Bandwidth × RTT",
+"Window size = Bandwidth / Delay"
+],
+"answer": 1
+},
+{
+"question": "What defines a 'symmetric NAT'?",
+"choices": [
+"Maps all outgoing traffic to one static port",
+"Assigns a unique mapping for each external host/port pair",
+"Allows all incoming connections from the Internet",
+"Uses the same public IP for all internal hosts"
+],
+"answer": 1
+},
+{
+"question": "Which NAT type is most restrictive to peer-to-peer applications?",
+"choices": [
+"Full-cone NAT",
+"Port-restricted NAT",
+"Symmetric NAT",
+"Restricted-cone NAT"
+],
+"answer": 2
+},
+{
+"question": "Which SDN protocol allows a controller to install forwarding rules on switches?",
+"choices": [
+"IGMP",
+"DHCP",
+"OpenFlow",
+"BGP"
+],
+"answer": 2
+},
+{
+"question": "In SDN architecture, what is the main role of the control plane?",
+"choices": [
+"Transmit user data across links",
+"Manage ARP resolution",
+"Make decisions about packet forwarding",
+"Encrypt packets before transmission"
+],
+"answer": 2
+},
+{
+"question": "Which security mechanism detects malicious traffic by analyzing packet headers and payloads?",
+"choices": [
+"Firewall",
+"IDS (Intrusion Detection System)",
+"DHCP",
+"VPN"
+],
+"answer": 1
+},
+{
+"question": "What distinguishes an IPS (Intrusion Prevention System) from an IDS?",
+"choices": [
+"IPS monitors; IDS blocks traffic",
+"IDS logs only; IPS actively blocks suspicious traffic",
+"IPS is layer 2 only",
+"IDS handles encryption"
+],
+"answer": 1
+},
+{
+"question": "Which protocol securely allows remote command-line access to a server?",
+"choices": [
+"FTP",
+"Telnet",
+"SSH",
+"NTP"
+],
+"answer": 2
+},
+{
+"question": "Which application-layer protocol is used to synchronize clocks over the Internet?",
+"choices": [
+"NTP",
+"SNMP",
+"TLS",
+"RTP"
+],
+"answer": 0
+},
+{
+"question": "What is the function of an OID in SNMP?",
+"choices": [
+"Assigns MAC addresses",
+"Identifies a specific variable in the MIB",
+"Encrypts SNMP traffic",
+"Routes SNMP messages"
+],
+"answer": 1
+},
+{
+"question": "Which layer of the OSI model does SNMP operate at?",
+"choices": [
+"Transport",
+"Application",
+"Network",
+"Link"
+],
+"answer": 1
+},
+{
+"question": "What does the Time Synchronization Protocol (NTP) use to reduce clock offset over time?",
+"choices": [
+"DNS resolution",
+"Round-trip delay calculation",
+"TCP handshakes",
+"Broadcast domains"
+],
+"answer": 1
+},
+{
+"question": "What is a key risk of using Telnet instead of SSH for remote login?",
+"choices": [
+"Uses UDP instead of TCP",
+"Consumes too much bandwidth",
+"Sends all data, including passwords, in plaintext",
+"Does not support DNS"
+],
+"answer": 2
+},{
+"question": "Which IPv6 mechanism is responsible for router advertisement and neighbor discovery?",
+"choices": [
+"SLAAC",
+"ICMPv6",
+"DNSSEC",
+"DHCPv6"
+],
+"answer": 1
+},
+{
+"question": "Which field in an IPv6 packet allows routers to identify and process optional data like routing or fragmentation?",
+"choices": [
+"Next Header",
+"Hop Limit",
+"Flow Label",
+"Traffic Class"
+],
+"answer": 0
+},
+{
+"question": "What is the primary difference between DNSSEC and traditional DNS?",
+"choices": [
+"DNSSEC uses UDP instead of TCP",
+"DNSSEC encrypts DNS queries",
+"DNSSEC provides origin authentication and data integrity",
+"DNSSEC replaces DNS with HTTPS"
+],
+"answer": 2
+},
+{
+"question": "In DNSSEC, what is the function of an RRSIG record?",
+"choices": [
+"Maps names to IP addresses",
+"Signs DNS resource record sets with digital signatures",
+"Defines authoritative name servers",
+"Caches intermediate DNS responses"
+],
+"answer": 1
+},
+{
+"question": "In SDN, what is a southbound interface used for?",
+"choices": [
+"Communication between controllers and applications",
+"Linking user applications with switches",
+"Communication between controller and network devices (e.g. switches)",
+"Peer discovery in overlay networks"
+],
+"answer": 2
+},
+{
+"question": "Which protocol operates as a southbound API in SDN to install flow rules on switches?",
+"choices": [
+"BGP",
+"OpenFlow",
+"OSPF",
+"TLS"
+],
+"answer": 1
+},
+{
+"question": "What is the purpose of a token bucket in traffic shaping?",
+"choices": [
+"Limit maximum bandwidth use per user",
+"Accumulate unused capacity for bursty traffic",
+"Prioritize DNS over HTTP traffic",
+"Encrypt video streaming traffic"
+],
+"answer": 1
+},
+{
+"question": "Which of the following is true about IP fragmentation in IPv4?",
+"choices": [
+"Only destination hosts can fragment packets",
+"Fragment offset is measured in bytes",
+"All fragments are independently routed and reassembled at the destination",
+"Routers reassemble fragments before forwarding"
+],
+"answer": 2
+},
+{
+"question": "What causes TCP’s fast retransmit to trigger?",
+"choices": [
+"A timeout after RTO expires",
+"The arrival of three duplicate ACKs for the same data",
+"Receiving a TCP FIN",
+"A sudden drop in RTT"
+],
+"answer": 1
+},
+{
+"question": "In NAT, why might an internal host be unable to receive an incoming connection request?",
+"choices": [
+"The NAT gateway uses symmetric encryption",
+"The NAT gateway doesn't track state or doesn't have a pre-existing mapping",
+"DNS resolution fails on the client",
+"UDP is blocked on the NAT"
+],
+"answer": 1
+},
+{
+"question": "Which DNS caching behavior reduces unnecessary load on authoritative servers?",
+"choices": [
+"Caching of expired records",
+"Prefetching records before they expire",
+"Respecting TTL values in responses",
+"Rejecting recursive queries"
+],
+"answer": 2
+},
+{
+"question": "What is one key role of the TCP receive window in flow control?",
+"choices": [
+"Determines the maximum segment size",
+"Specifies how much data the sender can send before being acknowledged",
+"Sets the number of allowed connections",
+"Prevents ARP spoofing"
+],
+"answer": 1
+},
+{
+"question": "In the OSI model, which layer is responsible for reordering and error recovery of data?",
+"choices": [
+"Data Link",
+"Network",
+"Transport",
+"Application"
+],
+"answer": 2
+},
+{
+"question": "Why is TCP considered a 'congestion-aware' protocol?",
+"choices": [
+"It uses encryption by default",
+"It always transmits data at the maximum link rate",
+"It adapts its sending rate based on perceived network congestion",
+"It queues all packets until acknowledged"
+],
+"answer": 2
+},
+{
+"question": "Which type of queueing discipline gives bandwidth to flows proportionally based on weights assigned to each?",
+"choices": [
+"First Come First Served (FCFS)",
+"Weighted Fair Queuing (WFQ)",
+"Round Robin",
+"Tail Drop"
+],
+"answer": 1
+}
 ]

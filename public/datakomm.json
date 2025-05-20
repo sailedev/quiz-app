@@ -593,5 +593,1363 @@
 			"Bruk av flere samtidige IP-adresser"
 		],
 		"answer": 2
-	}
+	},
+	{
+	    "question": "Which of the following best describes a protocol in computer networking?",
+	    "choices": [
+	      "A set of hardware devices connecting hosts",
+	      "A language for writing network software",
+	      "A specification of message formats and rules exchanged between entities",
+	      "A routing algorithm for packet forwarding"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "In the Internet protocol stack, which layer is responsible for end-to-end reliable data transfer?",
+	    "choices": [
+	      "Application layer",
+	      "Transport layer",
+	      "Network layer",
+	      "Link layer"
+	    ],
+	    "answer": 1
+	  },
+	  {
+	    "question": "What is the main difference between circuit switching and packet switching?",
+	    "choices": [
+	      "Circuit switching breaks messages into packets; packet switching reserves a dedicated path",
+	      "Packet switching reserves time slots; circuit switching uses store-and-forward",
+	      "Circuit switching allocates a fixed path and bandwidth; packet switching shares link resources on demand",
+	      "Packet switching requires a pre-established route; circuit switching sends packets independently"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "Which delay component in packet-switched networks is most variable and depends on network congestion?",
+	    "choices": [
+	      "Processing delay",
+	      "Transmission delay",
+	      "Propagation delay",
+	      "Queuing delay"
+	    ],
+	    "answer": 3
+	  },
+	  {
+	    "question": "What is the formula for transmission delay on a link of rate R sending a packet of size L?",
+	    "choices": [
+	      "R / L",
+	      "L × R",
+	      "L / R",
+	      "R - L"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "Which IPv4 mechanism allows multiple hosts on a private network to share a single public IP address?",
+	    "choices": [
+	      "DHCP",
+	      "DNS",
+	      "NAT",
+	      "ARP"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "What field in a DNS resource record specifies how long that record may be cached?",
+	    "choices": [
+	      "Value",
+	      "Type",
+	      "Name",
+	      "TTL"
+	    ],
+	    "answer": 3
+	  },
+	  {
+	    "question": "Which transport-layer protocol uses a three-way handshake to establish connections?",
+	    "choices": [
+	      "UDP",
+	      "TCP",
+	      "ICMP",
+	      "IP"
+	    ],
+	    "answer": 1
+	  },
+	  {
+	    "question": "What purpose does the TCP congestion-control algorithm serve?",
+	    "choices": [
+	      "Ensure packets are delivered in order",
+	      "Detect and retransmit lost segments",
+	      "Throttle sending rate when network is congested",
+	      "Translate domain names to IP addresses"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "Which HTTP header carries stateful tracking identifiers between client and server?",
+	    "choices": [
+	      "Host",
+	      "User-Agent",
+	      "Cookie",
+	      "Accept"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "In HTTP/1.1 persistent connections, what feature allows multiple outstanding requests without waiting for responses?",
+	    "choices": [
+	      "Chunked transfer encoding",
+	      "Content negotiation",
+	      "Pipelining",
+	      "Connection closing"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "What problem does HTTP/2 framing aim to mitigate?",
+	    "choices": [
+	      "DNS caching misses",
+	      "Head-of-line blocking at the transport layer",
+	      "Lack of encryption",
+	      "Poor content compression"
+	    ],
+	    "answer": 1
+	  },
+	  {
+	    "question": "Which DNS server type holds the authoritative records for a domain?",
+	    "choices": [
+	      "Root server",
+	      "TLD server",
+	      "Recursive resolver",
+	      "Authoritative DNS server"
+	    ],
+	    "answer": 3
+	  },
+	  {
+	    "question": "Which of these is NOT a valid DNS record type?",
+	    "choices": [
+	      "A",
+	      "NS",
+	      "FTP",
+	      "MX"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "What is the primary function of ARP in Ethernet networks?",
+	    "choices": [
+	      "Map IP addresses to MAC addresses",
+	      "Authenticate endpoints",
+	      "Detect collisions",
+	      "Resolve domain names"
+	    ],
+	    "answer": 0
+	  },
+	  {
+	    "question": "In TCP, what does the acknowledgment number field convey?",
+	    "choices": [
+	      "The next byte expected from the sender",
+	      "The last byte sent",
+	      "The window size",
+	      "The source port"
+	    ],
+	    "answer": 0
+	  },
+	  {
+	    "question": "Which application-layer protocol pulls email from a mailbox while leaving it on the server?",
+	    "choices": [
+	      "POP3",
+	      "SMTP",
+	      "IMAP",
+	      "HTTP"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "What algorithm class does OSPF belong to?",
+	    "choices": [
+	      "Distance-vector",
+	      "Link-state",
+	      "Path-vector",
+	      "Flooding"
+	    ],
+	    "answer": 1
+	  },
+	  {
+	    "question": "Which of the following is a key feature of peer-to-peer file distribution like BitTorrent?",
+	    "choices": [
+	      "Centralized indices",
+	      "Server-only distribution",
+	      "Swarming of file chunks among peers",
+	      "Fixed download speeds"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "In a P2P distribution model, how does the minimum distribution time scale as the number of peers increases?",
+	    "choices": [
+	      "Linearly increases",
+	      "Remains bounded by upload capacities of peers and server",
+	      "Doubles with each peer",
+	      "Becomes infinite"
+	    ],
+	    "answer": 1
+	  },
+	  {
+	    "question": "What is the purpose of the Ethernet CRC field?",
+	    "choices": [
+	      "Error detection",
+	      "Flow control",
+	      "Address resolution",
+	      "Congestion management"
+	    ],
+	    "answer": 0
+	  },
+	  {
+	    "question": "Which layer of the OSI/TCP stack is responsible for routing datagrams across multiple networks?",
+	    "choices": [
+	      "Transport",
+	      "Network",
+	      "Link",
+	      "Application"
+	    ],
+	    "answer": 1
+	  },
+	  {
+	    "question": "Which routing protocol uses TCP sessions on port 179 to exchange routing information between autonomous systems?",
+	    "choices": [
+	      "OSPF",
+	      "RIP",
+	      "BGP",
+	      "EIGRP"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "What is network address translation (NAT) primarily used for?",
+	    "choices": [
+	      "Encrypting IP packets",
+	      "Mapping private to public IP addresses",
+	      "Routing external traffic",
+	      "Translating domain names"
+	    ],
+	    "answer": 1
+	  },
+	  {
+	    "question": "Which of these is NOT a component of an HTTP request message?",
+	    "choices": [
+	      "Request line",
+	      "Headers",
+	      "Status code",
+	      "Optional body"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "In TCP congestion control, what state follows a timeout event in the classic algorithm?",
+	    "choices": [
+	      "Slow start",
+	      "Congestion avoidance",
+	      "Fast recovery",
+	      "Retransmission reduction"
+	    ],
+	    "answer": 0
+	  },
+	  {
+	    "question": "Which wireless LAN standard operates in the 2.4 GHz and 5 GHz bands and uses CSMA/CA?",
+	    "choices": [
+	      "Ethernet",
+	      "802.11 Wi‑Fi",
+	      "Bluetooth",
+	      "LTE"
+	    ],
+	    "answer": 1
+	  },
+	  {
+	    "question": "What role does the Internet Control Message Protocol (ICMP) serve?",
+	    "choices": [
+	      "Reliable data transfer",
+	      "Congestion control",
+	      "Network-layer error and diagnostic messages",
+	      "Name resolution"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "Which component in a Content Distribution Network (CDN) decides which replica server a client should contact?",
+	    "choices": [
+	      "Origin server",
+	      "Edge cache",
+	      "DNS-based redirection",
+	      "BGP router"
+	    ],
+	    "answer": 2
+	  },
+	  {
+	    "question": "What is the primary advantage of fiber-optic cable over twisted-pair copper wire?",
+	    "choices": [
+	      "Lower cost",
+	      "Higher immunity to electromagnetic interference",
+	      "Easier installation",
+	      "Unlimited bandwidth"
+	    ],
+	    "answer": 1
+	  },
+	{
+    "question": "Which of these is a feature of the UDP transport protocol?",
+    "choices": [
+      "Connection establishment handshake",
+      "Ordered delivery of segments",
+      "Checksum for error detection",
+      "Congestion control"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What mechanism does TCP use to ensure in-order delivery of data?",
+    "choices": [
+      "Sequence numbers and buffers",
+      "Checksums",
+      "Exponential backoff",
+      "Time-to-live field"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In the sliding window protocol, what happens when the sender’s window is full?",
+    "choices": [
+      "It starts a new connection",
+      "It pauses sending until an ACK arrives",
+      "It resets the sequence numbers",
+      "It sends duplicate packets"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which Ethernet feature prevents a single host from monopolizing the link?",
+    "choices": [
+      "Collision detection",
+      "Carrier sense",
+      "Backoff algorithm",
+      "Frame check sequence"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the typical maximum size of an Ethernet jumbo frame?",
+    "choices": [
+      "1500 bytes",
+      "9000 bytes",
+      "512 bytes",
+      "64 bytes"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which protocol maps a network-layer address to a link-layer (MAC) address?",
+    "choices": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "ICMP"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What does the TTL (Time To Live) field in an IP datagram prevent?",
+    "choices": [
+      "Incorrect addresses",
+      "Routing loops",
+      "Fragmentation",
+      "Checksum errors"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which IP fragmentation field indicates the offset of a fragment relative to the original data?",
+    "choices": [
+      "Identification",
+      "Flags",
+      "Fragment offset",
+      "Header checksum"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which ICMP message type is used by traceroute to discover the path to a destination?",
+    "choices": [
+      "Echo request",
+      "Destination unreachable",
+      "Time exceeded",
+      "Redirect"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In NAT terminology, what does PAT (Port Address Translation) allow?",
+    "choices": [
+      "Mapping multiple public IPs to one private IP",
+      "Mapping multiple private hosts to a single public IP using different ports",
+      "Translating domain names into IP addresses",
+      "Encrypting address mappings"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which SMTP command initiates the transmission of the body of an email message?",
+    "choices": [
+      "HELO",
+      "MAIL FROM",
+      "DATA",
+      "QUIT"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What default port does HTTPS use?",
+    "choices": [
+      "80",
+      "110",
+      "443",
+      "21"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which transport-layer port number range is considered 'well-known'?",
+    "choices": [
+      "0–1023",
+      "1024–49151",
+      "49152–65535",
+      "65536–70000"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which of these is a characteristic of a distance-vector routing protocol?",
+    "choices": [
+      "Each router knows the complete network topology",
+      "Routers exchange entire routing tables with neighbors",
+      "It always converges instantaneously",
+      "Uses link-state advertisements"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the purpose of OSPF’s Link State Advertisement (LSA)?",
+    "choices": [
+      "To notify neighbors of data packet drops",
+      "To flood local topology information throughout the area",
+      "To assign IP addresses to hosts",
+      "To establish TCP connections"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which MPLS component determines how packets are forwarded through the network?",
+    "choices": [
+      "Label Edge Router (LER)",
+      "Label Switch Router (LSR)",
+      "Path Computation Element",
+      "Routing Information Base"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does DHCP provide to a client?",
+    "choices": [
+      "MAC-to-IP mapping",
+      "Dynamic IP address and configuration information",
+      "Time synchronization",
+      "Encrypted tunnel"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How does HTTP use TCP connections in non-persistent mode?",
+    "choices": [
+      "One connection for multiple requests",
+      "One connection per object",
+      "Persistent reuse after a timeout",
+      "Shared across browsers"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which DNS record type maps a domain name to a textual description of the domain?",
+    "choices": [
+      "A",
+      "TXT",
+      "CNAME",
+      "SRV"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the main advantage of hierarchical (tiered) DNS?",
+    "choices": [
+      "Single server stores all records",
+      "Improved fault tolerance and distribution of query load",
+      "No need for caching",
+      "Uses UDP exclusively"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In wireless 802.11 networks, what does CSMA/CA stand for?",
+    "choices": [
+      "Carrier Sense Multiple Access with Collision Avoidance",
+      "Carrier Sense Multipath Access with Collision Access",
+      "Carrier Signal Multiple Arrival with Collision Avoidance",
+      "Controlled Signal Multi-user Access"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which QoS mechanism uses separate queues for different traffic classes?",
+    "choices": [
+      "Weighted Fair Queuing",
+      "Stop-and-Wait",
+      "Selective Repeat",
+      "Binary Exponential Backoff"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does the ‘fast retransmit’ mechanism in TCP rely on?",
+    "choices": [
+      "Timeout expiration",
+      "Receipt of three duplicate ACKs",
+      "Window full notification",
+      "SYN-ACK exchange"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following is a valid FQDN (Fully Qualified Domain Name)?",
+    "choices": [
+      "example",
+      "example.local",
+      "example.com.",
+      "http://example.com"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What type of NAT keeps track of outgoing connections and permits only established return traffic?",
+    "choices": [
+      "Static NAT",
+      "Dynamic NAT",
+      "Stateful NAT (NAT overload)",
+      "NAT64"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which application-layer protocol uses a command/response model and plaintext commands over TCP port 21?",
+    "choices": [
+      "SMTP",
+      "FTP",
+      "Telnet",
+      "SSH"
+    ],
+    "answer": 1
+  },
+	{
+    "question": "What is the primary purpose of the ARP “gratuitous” request?",
+    "choices": [
+      "Discover the MAC address of a remote host",
+      "Announce a host’s IP–MAC mapping to the local network",
+      "Resolve an IP address into a hostname",
+      "Refresh the DHCP lease"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which IPv6 address type is analogous to IPv4’s broadcast address?",
+    "choices": [
+      "Link-local unicast",
+      "Multicast",
+      "Anycast",
+      "Global unicast"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In TCP, what is the default initial congestion window (cwnd) roughly set to by many implementations?",
+    "choices": [
+      "1 MSS",
+      "2 MSS",
+      "3–4 MSS",
+      "10 MSS"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which ICMPv6 message helps a host discover the router on its local link?",
+    "choices": [
+      "Router Solicitation",
+      "Neighbor Solicitation",
+      "Redirect",
+      "Time Exceeded"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does the RST flag in a TCP header indicate?",
+    "choices": [
+      "Start of a connection",
+      "Graceful termination",
+      "Immediate connection reset",
+      "Data retransmission request"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What distinguishes Classless Inter-Domain Routing (CIDR) from classful IP addressing?",
+    "choices": [
+      "Fixed /24 subnet masks only",
+      "Variable-length subnet masks with prefix notation",
+      "Use of only 16-bit addresses",
+      "Automatic host configuration"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which transport-layer mechanism helps avoid congestion collapse by adjusting send rate?",
+    "choices": [
+      "Flow control window",
+      "Three-way handshake",
+      "Slow start",
+      "ARP caching"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In Ethernet, what is the maximum theoretical throughput of a 10 Gbps full-duplex link?",
+    "choices": [
+      "5 Gbps",
+      "10 Gbps",
+      "20 Gbps",
+      "40 Gbps"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the main advantage of HTTP caching using ETag headers over Last-Modified headers?",
+    "choices": [
+      "ETags are ignored by proxies",
+      "ETags allow byte-range validation",
+      "ETags provide more precise change detection",
+      "ETags compress responses automatically"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which DNSSEC record type holds the public key of the zone-signing key?",
+    "choices": [
+      "DS",
+      "DNSKEY",
+      "RRSIG",
+      "NSEC"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the purpose of the TCP Urgent Pointer field?",
+    "choices": [
+      "Indicate out-of-band data in the segment",
+      "Signal congestion",
+      "Carry sequence number",
+      "Negotiate window size"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In BGP, what attribute is used to break ties when multiple paths have the same local preference?",
+    "choices": [
+      "AS_PATH length",
+      "MED (Multi-Exit Discriminator)",
+      "Next-hop IP",
+      "Origin code"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which HTTP status code indicates that the resource has permanently moved to a new URI?",
+    "choices": [
+      "301",
+      "302",
+      "307",
+      "404"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does the TTL field in DNS resource records control?",
+    "choices": [
+      "Time to live of DNS server process",
+      "Cache duration of the record",
+      "Maximum DNS query hops",
+      "Lifetime of the zone file"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following is NOT a feature of IPv6?",
+    "choices": [
+      "Integrated IPsec",
+      "Mandatory ARP",
+      "Larger address space",
+      "Simplified header format"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In TCP fast recovery, what triggers the algorithm to enter recovery state?",
+    "choices": [
+      "SYN packet",
+      "Timeout expiration",
+      "Receipt of three duplicate ACKs",
+      "Zero window advertisement"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which transport-layer protocol would you choose for streaming real-time audio?",
+    "choices": [
+      "TCP",
+      "UDP",
+      "ICMP",
+      "ARP"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which algorithm does OSPF use to compute shortest paths?",
+    "choices": [
+      "Bellman-Ford",
+      "Dijkstra’s algorithm",
+      "Floyd-Warshall",
+      "A* search"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What does the term ‘socket’ refer to in networking?",
+    "choices": [
+      "Physical network interface",
+      "Link-layer frame",
+      "Combination of IP address and port number",
+      "Application-layer protocol"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which layer in the Internet model performs packet fragmentation and reassembly?",
+    "choices": [
+      "Application",
+      "Transport",
+      "Network",
+      "Link"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the effect of setting the TCP window size to zero?",
+    "choices": [
+      "Indicates the sender has no buffer space and must pause data transmission",
+      "Terminates the connection immediately",
+      "Requests urgent data",
+      "Switches to fast retransmit"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which protocol enables a host to automatically configure its own IPv6 address without a DHCP server?",
+    "choices": [
+      "SLAAC",
+      "RAA",
+      "PING",
+      "NDP"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What role does the DSCP field in an IP header play?",
+    "choices": [
+      "Identifies the fragment offset",
+      "Indicates differentiated services for QoS",
+      "Carries the transport checksum",
+      "Specifies the next-hop address"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which HTTP header is used by proxies and browsers to determine if a cached resource is still fresh?",
+    "choices": [
+      "Cache-Control",
+      "Server",
+      "Host",
+      "Connection"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In TCP, what is the purpose of the Acknowledgment Number?",
+    "choices": [
+      "Indicate how many bytes are currently unacknowledged",
+      "Specify the next sequence number expected",
+      "Set the size of the congestion window",
+      "Carry out-of-band data"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which mechanism prevents loops in spanning tree protocols?",
+    "choices": [
+      "Link-state advertisements",
+      "Timer-based flooding",
+      "Root bridge election and port roles",
+      "Distance-vector poison reverse"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the primary function of DHCP Discover messages?",
+    "choices": [
+      "Renew an existing lease",
+      "Release an IP address",
+      "Find available DHCP servers",
+      "Acknowledge DHCP offer"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which UDP header field allows a receiver to detect data corruption?",
+    "choices": [
+      "Length",
+      "Checksum",
+      "Source port",
+      "Destination port"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In a TCP connection teardown, what is the sequence of flags exchanged?",
+    "choices": [
+      "SYN, SYN-ACK, ACK",
+      "FIN, ACK, FIN, ACK",
+      "RST, FIN, ACK",
+      "PING, PONG"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which protocol uses hop-by-hop headers for extension options?",
+    "choices": [
+      "IPv4",
+      "IPv6",
+      "TCP",
+      "UDP"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What ASCII-based protocol is commonly used for retrieving email from a server without deleting it?",
+    "choices": [
+      "SMTP",
+      "FTP",
+      "POP3",
+      "IMAP"
+    ],
+    "answer": 3
+  },{
+    "question": "Which TCP flag combination is used for the three-way handshake?",
+    "choices": [
+      "SYN; SYN-ACK; ACK",
+      "ACK; FIN; RST",
+      "PSH; URG; ACK",
+      "FIN; FIN-ACK; RST"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does the Ethernet preamble consist of?",
+    "choices": [
+      "Destination MAC, Source MAC, EtherType",
+      "7 bytes of alternating 1s and 0s and 1 byte of start frame delimiter",
+      "Frame check sequence and padding",
+      "Type/length field and payload"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which algorithm does RIP use to compute routes?",
+    "choices": [
+      "Dijkstra’s algorithm",
+      "Distance-vector Bellman-Ford algorithm",
+      "Link-state SPF",
+      "Path-vector algorithm"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the purpose of the IP header’s Identification field?",
+    "choices": [
+      "Mark packets for Quality of Service",
+      "Identify fragments belonging to the same original datagram",
+      "Specify encryption keys",
+      "Authenticate the sender"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In HTTP, which method is considered idempotent?",
+    "choices": [
+      "POST",
+      "GET",
+      "CONNECT",
+      "PATCH"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which DNS message header field indicates whether recursion is desired?",
+    "choices": [
+      "QR bit",
+      "RA bit",
+      "RD bit",
+      "AA bit"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the default maximum segment size (MSS) negotiation based on?",
+    "choices": [
+      "Ethernet MTU minus IP and TCP headers",
+      "Link-layer frame size",
+      "Application payload size",
+      "DNS UDP payload limit"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which layer of the TCP/IP model does PPP (Point-to-Point Protocol) operate at?",
+    "choices": [
+      "Application",
+      "Transport",
+      "Network",
+      "Link"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "What distinguishes a stub Autonomous System in BGP?",
+    "choices": [
+      "It has multiple upstream providers",
+      "It does not advertise routes to external ASes",
+      "It is attached to only one other AS",
+      "It runs only IPv6"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which HTTP header tells caches how long to consider the response fresh?",
+    "choices": [
+      "Expires",
+      "Content-Length",
+      "Server",
+      "Transfer-Encoding"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the outcome when a TCP receiver advertises a zero window?",
+    "choices": [
+      "The sender closes the connection",
+      "The sender continues sending at reduced rate",
+      "The sender stops sending until a nonzero window advertisement arrives",
+      "The sender switches to UDP"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In WLANs, what is the role of the RTS/CTS mechanism?",
+    "choices": [
+      "Increase throughput by aggregating frames",
+      "Align clocks between AP and client",
+      "Avoid collisions caused by hidden nodes",
+      "Authenticate clients"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which IPv4 option allows a packet to record the IP addresses of each router it traverses?",
+    "choices": [
+      "Record Route",
+      "Strict Source Routing",
+      "Timestamp",
+      "Padding"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the primary function of DNS MX records?",
+    "choices": [
+      "Map hostnames to IPv6 addresses",
+      "Specify mail exchange servers for a domain",
+      "Define name server hierarchy",
+      "Provide text-based service descriptions"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which congestion-control phase increases cwnd exponentially?",
+    "choices": [
+      "Congestion avoidance",
+      "Fast recovery",
+      "Slow start",
+      "Recovery"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In IPsec, which protocol provides confidentiality?",
+    "choices": [
+      "Authentication Header (AH)",
+      "Encapsulating Security Payload (ESP)",
+      "IKE",
+      "GRE"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What mechanism does HTTP/1.1 use to indicate the end of a message when the length is not known in advance?",
+    "choices": [
+      "Content-Length header",
+      "Chunked transfer encoding",
+      "Connection: close",
+      "Multipart boundary"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which transport-layer field in UDP is optional but strongly recommended for IPv6?",
+    "choices": [
+      "Checksum",
+      "Length",
+      "Source port",
+      "Destination port"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the benefit of using a CDN for static web content?",
+    "choices": [
+      "Eliminates need for DNS",
+      "Distributes load across geographically dispersed caches",
+      "Bypasses TCP congestion control",
+      "Automatically compresses images"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which addition to DNS adds data integrity and origin authentication?",
+    "choices": [
+      "DNSSEC",
+      "DoH (DNS over HTTPS)",
+      "EDNS0",
+      "mDNS"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which protocol aggregates multiple application messages into a single UDP datagram for efficiency?",
+    "choices": [
+      "DHCP",
+      "DNS",
+      "QUIC",
+      "NTP"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In BGP, what does the AS_PATH attribute prevent?",
+    "choices": [
+      "Looping of route advertisements",
+      "Traffic engineering",
+      "Inter-AS routing",
+      "Load balancing"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which HTTP status code indicates client must authenticate to access the resource?",
+    "choices": [
+      "401 Unauthorized",
+      "403 Forbidden",
+      "404 Not Found",
+      "407 Proxy Authentication Required"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does the ‘type’ field in a DHCP packet specify?",
+    "choices": [
+      "Lease duration",
+      "Operation (discover, offer, request, etc.)",
+      "Subnet mask",
+      "Client MAC address"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which mechanism in TCP avoids global synchronization of flows?",
+    "choices": [
+      "Random Early Detection (RED)",
+      "Slow start",
+      "Fast retransmit",
+      "Delayed ACKs"
+    ],
+    "answer": 0
+  },{
+    "question": "What is the purpose of the CSMA/CD protocol in Ethernet networks?",
+    "choices": [
+      "Encrypt frames on the wire",
+      "Avoid and detect collisions during transmission",
+      "Address resolution",
+      "Provide flow control"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which IPv4 header field is used to reassemble fragmented packets?",
+    "choices": [
+      "Header checksum",
+      "Identification",
+      "Protocol",
+      "Time to Live"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In TCP, what does the window scale option allow?",
+    "choices": [
+      "Increasing the maximum segment size",
+      "Encrypting the window field",
+      "Extending the receive window beyond 65,535 bytes",
+      "Compressing the TCP header"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Which IPv6 feature replaces ARP from IPv4?",
+    "choices": [
+      "Neighbor Discovery Protocol",
+      "Router Solicitation",
+      "Multicast Listener Discovery",
+      "Path MTU Discovery"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does the 'SYN flood' attack exploit in the TCP protocol?",
+    "choices": [
+      "Three-way handshake state allocation",
+      "Sequence number prediction",
+      "Window scaling",
+      "Urgent pointer processing"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which TLS handshake message carries the client's supported cipher suites?",
+    "choices": [
+      "ClientHello",
+      "ServerHello",
+      "Certificate",
+      "Finished"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In MPLS, what is the function of the Label Edge Router (LER)?",
+    "choices": [
+      "Swap labels on transit packets",
+      "Strip or impose MPLS labels at network ingress/egress",
+      "Compute shortest paths",
+      "Maintain the routing table"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which DNS record type is used to specify the canonical name of an alias?",
+    "choices": [
+      "A",
+      "NS",
+      "CNAME",
+      "MX"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What mechanism does HTTP/2 use to avoid head-of-line blocking that HTTP/1.1 experiences?",
+    "choices": [
+      "Separate TCP connections per resource",
+      "Binary framing and multiplexing on a single connection",
+      "UDP transport",
+      "DNS prefetching"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which ICMP message type informs a host that the destination is unreachable?",
+    "choices": [
+      "Echo Request",
+      "Time Exceeded",
+      "Destination Unreachable",
+      "Redirect"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the effect of setting the ECN bits in an IP header but not in the TCP header?",
+    "choices": [
+      "Enables encryption but not congestion control",
+      "Marks packets for congestion but disables TCP reaction",
+      "Prevents fragmentation",
+      "Disables ECN entirely"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which of the following is NOT part of the TCP three-way handshake?",
+    "choices": [
+      "SYN",
+      "ACK",
+      "FIN",
+      "SYN-ACK"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "In OSPF, what is an 'area' used for?",
+    "choices": [
+      "Partitioning a network to optimize flooding and maintain scalability",
+      "Labeling BGP routes",
+      "Assigning IP addresses",
+      "Grouping routers by vendor"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What purpose does the HTTP 'ETag' header serve?",
+    "choices": [
+      "Indicate supported methods",
+      "Identify a specific version of a resource for cache validation",
+      "Negotiate compression",
+      "Provide authentication credentials"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which IPv4 option can record the path taken by a packet?",
+    "choices": [
+      "Loose Source Routing",
+      "Record Route",
+      "Timestamp",
+      "Security"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "What is the main advantage of link-state routing protocols over distance-vector protocols?",
+    "choices": [
+      "They never require more memory",
+      "They converge faster and avoid count-to-infinity",
+      "They use only UDP",
+      "They do not need adjacency"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Which HTTP status code indicates too many requests (rate limiting)?",
+    "choices": [
+      "429",
+      "503",
+      "400",
+      "302"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "In DNS, what does recursion mean when a resolver queries a server?",
+    "choices": [
+      "Server must query other servers on behalf of the client",
+      "Client retries the query multiple times",
+      "Server returns multiple answers",
+      "Client resolves using local hosts file"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What does the 'push' (PSH) flag in a TCP segment request the receiver to do?",
+    "choices": [
+      "Immediately flush buffered data to the application",
+      "Push out-of-band data",
+      "Pause the connection",
+      "Initiate congestion control"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which component of a CDN typically serves content closest to the end user?",
+    "choices": [
+      "Origin server",
+      "Regional cache",
+      "Edge cache",
+      "DNS resolver"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the function of the IPv6 Flow Label field?",
+    "choices": [
+      "Notify routers of performance requirements for real-time traffic",
+      "Carry the checksum",
+      "Identify the next header",
+      "Specify packet length"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Which protocol layer is responsible for end-to-end encryption in HTTPS?",
+    "choices": [
+      "Application layer",
+      "Transport layer",
+      "Network layer",
+      "Link layer"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "In TCP congestion control, what is the 'congestion window' (cwnd) used for?",
+    "choices": [
+      "Limit the number of outstanding unacknowledged bytes in flight",
+      "Indicate the receiver's free buffer space",
+      "Control the Linux kernel scheduling",
+      "Encrypt data"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "What is the default behavior of DNS resolvers when they receive a response with the 'AA' (Authoritative Answer) flag set?",
+    "choices": [
+      "They ignore the answer and retry with another server",
+      "They trust the answer and cache it",
+      "They perform a reverse lookup",
+      "They forward the query to root servers"
+    ],
+    "answer": 1
+  }
 ]

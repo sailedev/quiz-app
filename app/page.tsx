@@ -18,7 +18,7 @@ function pluckRandomSubset<T>(array: T[], count: number): T[] {
 
 export default function Home() {
 	const [questions, setQuestions] = useState<QuestionType[] | null>(null);
-	const [numberOfQuestions, setNumberQuestions] = useState(0);
+	const [numberOfQuestions, setNumberQuestions] = useState(20);
 
 	// ✅ Last opp egen fil
 	const handleFile = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -31,7 +31,7 @@ export default function Home() {
 				const json = JSON.parse(
 					event.target?.result as string
 				) as QuestionType[];
-				const selected = pluckRandomSubset(json, 20);
+				const selected = pluckRandomSubset(json, numberOfQuestions);
 				setQuestions(selected);
 			} catch (error) {
 				alert('Ugyldig JSON-fil');
@@ -45,7 +45,10 @@ export default function Home() {
 		try {
 			const res = await fetch('/datakomm.json');
 			const data = await res.json();
-			const selected = pluckRandomSubset(data as QuestionType[], 20);
+			const selected = pluckRandomSubset(
+				data as QuestionType[],
+				numberOfQuestions
+			);
 			setQuestions(selected);
 		} catch (err) {
 			alert('Kunne ikke laste eksempelquiz' + err);
@@ -64,6 +67,20 @@ export default function Home() {
 							Last opp Quiz-fil
 						</h1>
 						<div className='space-y-4 text-center'>
+							<div>
+								<label htmlFor='questionCount' className='block mb-1'>
+									Antall spørsmål:
+								</label>
+								<input
+									id='questionCount'
+									type='number'
+									min={1}
+									max={100}
+									value={numberOfQuestions}
+									onChange={(e) => setNumberQuestions(Number(e.target.value))}
+									className='px-3 py-2 rounded text-white border-white border bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-600'
+								/>
+							</div>
 							<input
 								type='file'
 								accept='.json'

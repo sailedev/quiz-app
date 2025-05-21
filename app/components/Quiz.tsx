@@ -7,6 +7,15 @@ type Props = {
 	onRetry: () => void;
 };
 
+const getGrade = (score: number, total: number) => {
+	if (score / total >= 0.9) return 'A';
+	if (score / total >= 0.8) return 'B';
+	if (score / total >= 0.6) return 'C';
+	if (score / total >= 0.5) return 'D';
+	if (score / total >= 0.4) return 'E';
+	return 'F';
+};
+
 const Quiz = ({ questions, onRetry }: Props) => {
 	const [current, setCurrent] = useState(0);
 	const [answers, setAnswers] = useState<(number | null)[]>(
@@ -37,7 +46,8 @@ const Quiz = ({ questions, onRetry }: Props) => {
 				<h2 className='text-2xl font-bold mb-4 text-center'>Resultat</h2>
 				<p className='mb-6 text-center text-lg'>
 					Du fikk <span className='font-semibold'>{score}</span> av{' '}
-					{questions.length} riktige.
+					{questions.length} riktige. Karakter:{' '}
+					{getGrade(score, questions.length)}
 				</p>
 
 				<div className='space-y-8 mb-8'>

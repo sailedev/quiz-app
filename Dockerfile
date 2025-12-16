@@ -4,13 +4,12 @@ FROM node:20-slim AS base
 ENV NODE_ENV=production
 WORKDIR /app
 
-RUN npm i -g npm@10
+RUN npm i -g npm@11
 
 FROM base AS deps
 RUN apt-get update -qq && apt-get install -y -qq --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*
 COPY package.json package-lock.json ./
-ENV NODE_ENV=development
-RUN --mount=type=cache,target=/root/.npm npm ci
+RUN --mount=type=cache,target=/root/.npm npm ci --include=dev
 
 FROM base AS builder
 COPY --from=deps /app/node_modules ./node_modules

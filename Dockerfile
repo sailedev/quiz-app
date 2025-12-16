@@ -9,6 +9,7 @@ RUN npm i -g npm@10
 FROM base AS deps
 RUN apt-get update -qq && apt-get install -y -qq --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*
 COPY package.json package-lock.json ./
+ENV NODE_ENV=development
 RUN --mount=type=cache,target=/root/.npm npm ci
 
 FROM base AS builder

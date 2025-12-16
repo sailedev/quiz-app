@@ -6,7 +6,8 @@
 		"dev": "next dev --turbopack",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"knip": "knip"
 	},
 	"dependencies": {
 		"next": "16.0.10",

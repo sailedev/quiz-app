@@ -17,6 +17,7 @@
 		"@tailwindcss/postcss": "^4.1.18",
 		"@types/node": "^25.0.2",
 		"@types/react": "^19.2.7",
+		"knip": "^5.74.0",
 		"tailwindcss": "^4",
 		"typescript": "^5.9.3"
 	}

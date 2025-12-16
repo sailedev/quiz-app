@@ -2,8 +2,6 @@ name: Build & Publish Docker image to GHCR
 
 on:
   push:
-    branches:
-      - main
   workflow_dispatch:
 
 concurrency:
@@ -11,8 +9,33 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  lint:
+    name: Lint
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Enable corepack + pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          pnpm --version
+          node --version
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run knip
+        run: pnpm run knip
+
   build-and-push:
-    runs-on: ubuntu-latest
+    name: Build and push
+    runs-on: self-hosted
+    needs: lint
     permissions:
       contents: read
       packages: write
@@ -37,7 +60,7 @@ jobs:
         id: ts
         run: echo "ts=$(date +'%Y-%m-%d-%H%M%S')" >> $GITHUB_OUTPUT
 
-      - name: Extract metadata
+      - name: Extract metadata (tags, labels)
         id: meta
         uses: docker/metadata-action@v5
         with:

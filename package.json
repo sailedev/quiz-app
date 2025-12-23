@@ -20,7 +20,7 @@
 		"eslint": "^9.39.2",
 		"eslint-config-next": "^16.0.10",
 		"eslint-config-prettier": "^10.1.8",
-		"knip": "^5.74.0",
+		"knip": "^5.76.3",
 		"tailwindcss": "^4",
 		"typescript": "^5.9.3"
 	}
